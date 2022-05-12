@@ -1,0 +1,31 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static  void main(String[] args) {
+         int marks[] = {8,2,6,4,2};
+         int sum =0, sumsq = 0;
+         double mean , stdDev;
+         for (int i : marks)
+         {
+             sum += i;
+             sumsq += i*i;
+         }
+         mean = (double)sum/ marks.length;
+         stdDev = Math.sqrt((double)(sumsq)/ marks.length-mean*mean);
+
+         System.out.printf("Mean is : %.2f%n",mean);
+         System.out.printf("Standard deviation is:%.2f%n",stdDev);
+
+
+            }
+        }
+
+
+
+
+
+
+
